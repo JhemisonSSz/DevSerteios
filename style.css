@@ -8,69 +8,108 @@
 body {
     
     background-color: black;
+    padding: 20px;
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 30px auto 0;
+    max-width: 100%;
     width: 200px;
-    height: 180px;
-    margin-top: 30px; 
+    height: auto;
 }
 
 h1 {
     text-align: center;
     font-weight: 400px;
-    font-size: 70px;
-    line-height: 100%;
+    font-size: clamp(2.5rem, 8vw, 4.375rem);
+    line-height: 1.2;
     color: #ffff;
 }
 
 h2 {
     text-align: center;
-    font-weight: 400px;
-    font-size: 25px;
-    line-height: 100%;
+    font-weight: 400;
+    font-size: clamp(1.25rem, 4vw, 1.56rem);
+    line-height: 1,2;
     color: #FFDE21;
-    margin: 100px 0 29px;
+    margin: 60px 0 29px;
 }
 
 div {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 input {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 50px;
     border-radius: 10px;
-    border-width: 1px;
     opacity: 1;
     background: #FFFFFF40;
     border: 1px solid #FFFFFF33;
-    font-weight: 500px;
-    font-size: 20px;
-    font-style: Medium;
-    line-height: 100%;   
+    font-weight: 500;
+    font-size: 18px;
     padding-left: 15px;
     color: #FFFFFF;
 }
 
 button {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
-    width: 250px;
+    margin: 40px auto 0;
+    width: 100%;
+    max-width: 250px;
     height: 45px;
     background: #AEC346;
     border-radius: 10px;
+    border: none;
     box-shadow: 0px 18px 40px 0px #AEC34659;
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 2.5px;
     text-align: center;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1024px) and (min-width: 481px) {
+    body {
+        padding: 40px;
+    }
+
+    h2 {
+        margin: 50px 0 25px;
+    }
+
+    div {
+        gap: 15px;
+    }
+
+    input {
+        max-width:
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        margin: 40px 0 20px;
+    }
+
+    div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    button {
+        margin-top: 30px;
+    }
 }
