@@ -5,7 +5,7 @@ function generateNumber() {
     const numberMax = Math.floor(document.querySelector('.numero-max').value)
 
     if (numberMin >= numberMax) {
-        alert('O primeiro número tem ser menor que o segundo')
+        alert('O primeiro valor tem que ser menor que o segundo')
     }
     else {
         const result = Math.floor(Math.random() * (numberMax - numberMin + 1) + numberMin);
