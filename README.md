@@ -22,7 +22,7 @@ O **DevSorteios** é uma aplicação web simples, rápida e intuitiva para sorte
 ---
 
 ## 📂 Acesse o projeto
-Clique aqui para testar](https://jhemisonssz.github.io/DevSerteios/)
+[Clique aqui para testar](https://jhemisonssz.github.io/DevSerteios/)
 
 
 ---
